@@ -1,6 +1,6 @@
 Description
 ===========
-Install polipo proxy from package manager.
+Install [Polipo](http://www.pps.univ-paris-diderot.fr/~jch/software/polipo/) proxy from package manager.
 Add polipo as a service and start immediately.
 
 There is a single recipe default and a simple template configuration file that allows full external access to the proxy and adds logging.
@@ -18,7 +18,8 @@ Usage
 =====
 
 To use default recipe
-  recipe[polipo]
+
+    recipe[polipo]
 
 Issues
 =====
