@@ -28,6 +28,11 @@ template "/etc/polipo/config" do
   group "root"
   notifies :enable, "service[polipo]"
   notifies :start, "service[polipo]"
+  variables({
+      :proxy_address => node[:polipo][:proxy_address],
+      :allowed_clients => node[:polipo][:allowed_clients],
+      :log_level => node[:polipo][:log_level]
+  })
 end
 
 service "polipo" do
